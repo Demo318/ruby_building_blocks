@@ -12,8 +12,8 @@ def stock_picker (value_by_days)
       end
     end
   end
+  puts "Buy on day #{low_day + 1} and sell on day #{high_day + 1} for a profit of $#{value_by_days[high_day] - value_by_days[low_day]}."
   return [low_day, high_day]
-end #end of method
+end
 
-puts "stock_picker([17,3,6,9,15,8,6,1,10]) == [1,4]"
-stock_picker([17,3,6,9,15,8,6,1,10]) == [1,4]
+stock_picker([17,3,6,9,15,8,6,1,10])
