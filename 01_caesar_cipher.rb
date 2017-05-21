@@ -25,7 +25,7 @@ def caesar_cipher (entry, shift_factor = 0)
     end
   end
   entry = entry.join("") #join array back into string
-  puts entry
+  return entry
 end
 
 caesar_cipher("0123456789", 1)
